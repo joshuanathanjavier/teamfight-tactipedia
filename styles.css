@@ -1,0 +1,519 @@
+* {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-zoom: fixed;
+}
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #3000a1 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #3000a1;
+    border-radius: 10px;
+    border: 3px solid #000000;
+  }
+
+/* Add some basic styling to the body */
+body {
+    background-color: #FAA845;
+    background-image: url("images/tft-bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the headings */
+h1, h2, h3, p{
+    color: #F9F9F9;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-shadow: 1px 1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111, -1px -1px 0 #111111, 1px 0px 0 #111111, 0px 1px 0 #111111, -1px 0px 0 #111111, 0px -1px 0 #111111;
+}
+
+/* Add some styles to the links */
+.logo:hover {
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(3px) saturate(150%);
+    -webkit-backdrop-filter: blur(3px) saturate(150%);
+    background-color: #111111;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+li a {
+    color: #F9F9F9;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: #dfd152;
+}
+
+#home h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* End of basic styling */
+
+/*Home*/
+.homepage {
+    margin-top: 65px;
+    overflow: hidden;
+}
+
+.rem-rum {
+    width: 940px;
+    height: 530px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    filter: brightness(30%);
+}
+
+.rem-rum1 {
+    width: 940px;
+    height: 530px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.brdr {
+    border: 5px solid #fafafa;
+    border-radius: 0 120px 0 0;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.brdr1 {
+    border: 6px solid #fafafa;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-right: 145px;
+}
+
+.brdr2 {
+    border: 6px solid #fafafa;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    margin-left: 145px;
+}
+
+.tfttext {
+    width: 500px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin-top: -420px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.bth{
+    color: #0b0b0b;
+    background-color: #39c7ff;
+    font-size: 11px;
+    border: 1px solid #2d63c8;
+    border-radius: 3px;
+    padding: 15px 50px;
+    cursor: pointer;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    width: 230px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin-top: -240px;
+    text-transform: uppercase;
+}
+
+.bth:hover {
+    color: #fafafa;
+    background-color: #6662d5;
+}
+
+.vl {
+    border-left: 3px solid #fafafa;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -2px;
+    margin-top: 50px;
+  }
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #fafafa;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.desc {
+    text-align: center;
+    margin-top: 50px;
+}
+.desc1 {
+    color: #F9F9F9;
+    font-size: 75px;
+    letter-spacing: 2.2px;
+    line-height: 65px;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0 -10px -10px;
+    padding: 0 15px 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.pdesc1 {
+    color: #fbfbfb;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.9px;
+    margin: 15px 350px 0;
+    font-weight: 400;
+}
+
+.desc2 {
+    color: #F9F9F9;
+    font-size: 70px;
+    letter-spacing: 2.2px;
+    line-height: 65px;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0 -10px -10px;
+    padding: 0 15px 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.bth1 {
+    color: #fafafa;
+    background-color: #6662d5;
+    font-size: 11px;
+    border: 1px solid #2d63c8;
+    border-radius: 3px;
+    padding: 15px 50px;
+    cursor: pointer;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    width: 230px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.bth1:hover {
+    color: #fafafa;
+    background-color: #807dd8;
+}
+
+div.descll {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+    margin: 230px 0;
+    left: 0;
+    right: 0;
+    margin-left: 26em;
+    margin-right: auto;
+    position: relative;
+  }
+
+  div.gall {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    offset-path: path('m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30');
+    box-shadow: 1px 1px 3px #0008;
+    transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77,-1.17,.75,.84),box-shadow .3s, z-index .3s;
+    z-index: 0;
+  }
+
+  div.gall:nth-last-child(3):first-child {
+    offset-distance: 17%;
+  }
+  div.gall:nth-last-child(2):nth-child(2) {
+    offset-distance: 49%;
+  }
+  div.gall:last-child:nth-child(3) {
+    offset-distance: 81%;
+  }
+
+  .horz-line {
+    margin: 150px 0;
+    display: flex;
+    justify-content: space-around;
+    align-self: start;
+  }
+
+  .brdr3 {
+    border-top: 6px solid #fafafa;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.mrg {
+    margin-top: 30px;
+}
+.mrgb {
+    margin-bottom: 30px;
+}
+
+
+/* End of home*/
+
+/* Champions */
+.tgh {
+    border:none;
+    border-collapse:collapse;
+    border-spacing:0;
+    margin: 0 auto;
+}
+.tg-0pkyh:hover {
+    filter: invert(100%);
+}
+
+.tgh-0pkyh {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7458%) hue-rotate(227deg) brightness(92%) contrast(91%);
+}
+.tgh-0pkyh:hover {
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 767px) {
+    .tgh {
+        width: auto !important;
+    }
+    
+    .tgh col {
+        width: auto !important;
+    }
+    
+    .tgh-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+/* Subpages */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 180px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #111111;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .fcb-crop {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin: 0 auto;
+  }
+
+  .fcb-crop img {
+      width: 180px;
+      height: auto;
+      overflow: hidden;
+      object-fit: cover;
+  }
+  
+  .flx {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .crop {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+  
+      .crop img {
+        width: 180px;
+        height: 300px;
+        object-fit: cover;
+      }
+  
+      .flip-card-front span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 700%);
+          font-weight: bold;
+          font-size: 1em;
+          color: white;
+          text-transform: uppercase;
+          text-shadow: 2px 2px 0 #111111, 2px -2px 0 #111111, -2px 2px 0 #111111, -2px -2px 0 #111111, 2px 0px 0 #111111, 0px 2px 0 #111111, -2px 0px 0 #111111, 0px -2px 0 #111111;
+      }
+/* End of subpages*/
+/* End of champions */
+
+/* Items */
+.tg {
+    border-collapse:collapse;
+    border-spacing:0; 
+    margin: 0 auto;
+}
+/**/
+.tg td {
+    border-color:rgba(0, 0, 0, 0);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:5px 5px;
+    word-break:normal;
+}
+
+.tg th {
+    border-color:rgb(0, 0, 0);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:5px 5px;
+    word-break:normal;
+}
+
+.tg .tg-0pky {
+    text-align:left;
+    vertical-align:top;
+    border-color: #111111;
+}
+
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+
+    .tg col {
+        width: auto !important;
+    }
+
+    .tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+/* End of items */
